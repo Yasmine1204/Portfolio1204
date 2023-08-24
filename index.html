@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>My Portfolio</title>
+    <style>
+        
+        *{
+            margin:0px;
+        }
+        .home{
+            height:100vh;
+            width:100%;
+            background-image: linear-gradient(45deg,white,black,white);
+        }
+        .home nav{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            height: 70px;
+            width:400px;
+            position:fixed;
+            right:0px;
+        }
+        nav a{
+            text-decoration: none;
+            font-size: 20px;
+            font-family: 'Cinzel', serif;
+            font-family: 'Play', sans-serif;
+            font-family: 'Poppins', sans-serif;
+            color: rgb(9, 45, 118);
+        }
+        nav a:hover{
+            color:white;
+            text-shadow: 1px 1px 1px white;
+            scale:1.1;
+        }
+        .main .name{
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform:translate(-150px,-50px);
+            font-style: italic;
+            
+        }
+        .name h1{
+            font-size: 50px;
+            font-family: Italic;
+            color: deeppink;
+            text-shadow: 2px 2px 2px black;
+        }
+        .name h2{
+            margin-left: -300px;
+            font-size: 65px;
+            color:rgb(43, 192, 233);
+            text-shadow: 3px 3px 1px whitesmoke;
+        }
+        .name h1:hover{
+            color: purple;
+            font-size: 55px;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 3px 3px 1px whitesmoke;
+        }
+        .name h2:hover{
+            color: darkorange;
+            text-shadow: 3px 3px 1px whitesmoke;
+            font-size: 70px;
+        }
+        #icon{
+            position:relative;
+            top:60px;
+            left:150px;
+            font-size :80px;
+            color:white;
+            animation:bounce 0.5s ease infinite alternate;
+        }
+        @keyframes bounce{
+            from{
+                transform: translate(0px);
+            }
+            to{
+                transform: translateY(10px);
+            }
+            
+        }
+        .about{
+            height:100vh;
+            width:100%;
+            background-image: linear-gradient(35deg,red,white,red);
+        }
+        .about h2{
+            color: rgb(206, 225, 34);
+            font-size: 55px;
+            font-family:'Times New Roman', Times, serif;
+            text-align: center;
+            text-shadow: 2px 2px 2px black;
+        }
+        .about img{
+            height:300px;
+            width:200px; 
+            border-radius: 5%;
+            position: relative;
+            align-items: center;
+            left:600px;
+        }
+        .about p{
+            color: rgb(11, 105, 198);
+            line-height: 40px;
+            align-items: center;
+            
+        }
+        .para{
+            width: 600px;
+            font-size: 30px;
+            font-style: italic;
+            color: azure;
+            position: relative;
+            left: 500px;
+        } 
+        .skill{
+            height:100vh;
+            width:100%;
+            background-image: linear-gradient(25deg,blue,white,blue);
+        }
+        .skill .inner-skill{
+            position: relative;
+            top:150px;
+            height:470px;
+            width:60%;
+            background-color: black;
+            position: relative;
+            left:20%;
+            border-radius: 20px;
+            color:white;
+        }
+        .skill .inner-skill h2{
+            position:relative;
+            top:15px;
+            text-align: center;
+            font-family: 'Times New Roman', Times, serif;
+            text-shadow: 2px 2px 2px red;
+            font-size: 55px;
+        }
+        .skill .inner-skill p{
+            font-size: 25px;
+            padding:10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-shadow: 1px 1px orange;
+        }
+        .skill .inner-skill .skill-rating{
+            width:70%;
+            background-color: #121112;
+            border-radius: 5px;
+            height: 20px;
+            position: relative;
+            left:120px;
+        }
+        .skill .inner-skill .rating1{
+        background-color: #b31298fa;
+        border-radius: 5px;
+        height: 100%;
+        width: 88%; /* Adjust this value to set the initial rating */
+        transition: width 1s ease-in-out;
+            
+            
+        animation-name:load1;
+        animation-duration:3s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:initial;
+        animation-direction:alternate;
+}
+@keyframes load1 {
+    from{
+       width:0px;
+    }
+    to{
+        width:88%;
+    }
+} 
+.skill .inner-skill .skill-rating{
+            width:70%;
+            background-color: #121112;
+            border-radius: 5px;
+            height: 20px;
+            position: relative;
+            left:120px;
+        }
+        .skill .inner-skill .rating2{
+        background-color: #f1f11dfa;
+        border-radius: 5px;
+        height: 100%;
+        width: 80%; /* Adjust this value to set the initial rating */
+        transition: width 1s ease-in-out;
+            
+            
+        animation-name:load2;
+        animation-duration:3s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:initial;
+        animation-direction:alternate;
+}
+@keyframes load2 {
+    from{
+       width:0px;
+    }
+    to{
+        width:80%;
+    }
+} 
+.skill .inner-skill .rating3{
+background-color: #1307f2fa;
+border-radius: 5px;
+height: 100%;
+width: 90%; /* Adjust this value to set the initial rating */
+transition: width 1s ease-in-out;
+    
+    
+animation-name:load3;
+animation-duration:3s;
+animation-timing-function:ease-in-out;
+animation-iteration-count:initial;
+animation-direction:alternate;
+}
+@keyframes load3 {
+    from{
+       width:0px;
+    }
+    to{
+        width:90%;
+    }
+}
+.skill .inner-skill .skill-rating{
+            width:70%;
+            background-color: #121112;
+            border-radius: 5px;
+            height: 20px;
+            position: relative;
+            left:120px;
+        }
+        .skill .inner-skill .rating4{
+        background-color: #78050ffa;
+        border-radius: 5px;
+        height: 100%;
+        width: 85%; /* Adjust this value to set the initial rating */
+        transition: width 1s ease-in-out;
+            
+            
+        animation-name:load4;
+        animation-duration:3s;
+        animation-timing-function:ease-in-out;
+        animation-iteration-count:initial;
+        animation-direction:alternate;
+}
+@keyframes load4 {
+    from{
+       width:0px;
+    }
+    to{
+        width:85%;
+    }
+}
+.skill .inner-skill .rating5{
+background-color: #0ce076fa;
+border-radius: 5px;
+height: 100%;
+width: 55%; /* Adjust this value to set the initial rating */
+transition: width 1s ease-in-out;
+    
+    
+animation-name:load5;
+animation-duration:3s;
+animation-timing-function:ease-in-out;
+animation-iteration-count:initial;
+animation-direction:alternate;
+
+}
+
+@keyframes load5 {
+    from{
+       width:0px;
+    }
+    to{
+        width:55%;
+    }
+} 
+.project{
+    height:100vh;
+    width:100%;
+    background-image: linear-gradient(35deg,green,white,green,white,green);
+}  
+.project h1{
+    padding: 15px 10px 10px 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: 2px 2px white;
+}
+.project img{
+    height: 140px;
+    width: 220px;
+    border-radius: 10px;
+    position: relative;
+    display: inline-block;
+    justify-content: space-around;
+    left:200px;
+}
+.project button{
+    border: none;
+    background-color: rgba(224, 26, 26, 0.884);
+    padding: 10px ;
+    border-radius: 15px;
+    cursor: pointer;
+    position: relative;
+    left:650px;
+    bottom: 100px;
+    font-family: 'Crimson Text', serif;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.project button:hover{
+    background-color: rgba(240, 74, 74, 0.655);
+}
+
+.project button a{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 5px;
+    color: black;
+}
+
+
+.project .project1 h2{
+    position: relative;
+    left:700px;
+    top:-150px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 2px 2px white;
+}
+
+.project .project2 h2{
+    position: relative;
+    left:700px;
+    top:-150px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 2px 2px white;
+}
+.project .project3 h2{
+    position: relative;
+    left:700px;
+    top:-150px;
+    font-family: 'Rubik Wet Paint', cursive;
+    text-shadow: 2px 2px white;
+}
+.contact{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(30deg,purple,white,purple,white);
+}
+.contact h1{
+    position: relative;
+    top:100px;
+}
+.contact a{
+    width: 50px;
+    height: 50px;
+    position: relative;
+    left:500px;
+    top:160px;
+    margin: 15px;
+    display: inline-block;
+}
+
+.contact h1{
+    padding: 30px 10px 10px 10px;
+    text-align: center;
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px white;
+}
+
+
+.contact img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact img:hover{
+    background-color: #61f1f3;
+    border-radius: 50px;
+}
+
+.contact .cv h1{
+    font-family: 'Aclonica', sans-serif;
+    text-shadow: 2px 2px white;
+    position: relative;
+    top:230px;    
+}
+
+.contact .res a{
+    display:contents;
+}
+
+.contact .res button{
+    border: none;
+    background-color: rgb(252,230,157);
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Crimson Text';
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    top: 290px;
+    left:500px;
+}
+
+.contact .res button a{
+    color: black;
+}
+
+.contact .res button:hover{
+    background-color: antiquewhite;
+}
+        
+
+    
+    </style>
+</head>
+<body>
+    <div class="main">
+
+        <!-- home section starts -->
+
+        <div class="home">
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#prjct">Project</a>
+            <a href="#contact">Contact</a>
+        </nav> 
+        <div class="name">
+            <h1>Hi I Am Yasmine</h1>
+            <h2>I'm a Python full stack developer</h2>
+            <a href="#icon"><span class="material-symbols-outlined" id="icon">expand_circle_down</span></a>
+        </div>
+        </div>
+
+        <!-- home section ends -->
+
+        <!-- about section starts -->
+        <div class="about" id="about">
+            <h2>About Me</h2><br><br>
+            <img src="img.png" alt="">
+            <p class="para" align="justify">I'm 21 years old,B.E student at JNN INstitute of Engineering.I Really enjoy Problem solving as well as making things pretty and easy to use .I can't stop learning new things,I beleive in "Practice makes more Improvements".</p>
+        </div>
+
+        <!-- about section ends -->
+
+        <!-- skill session starts -->
+        <div class="skill" id="skills">
+            <div class="inner-skill">
+                <h2>My Skills</h2>
+                <p>Python</p>
+                <div class="skill-rating">
+                    <div class="rating1"></div>
+                </div>
+            <p>SQL</p>
+            <div class="skill-rating">
+                <div class="rating2"></div>
+            </div>
+            <p>HTML</p>
+            <div class="skill-rating">
+                <div class="rating3"></div>
+            </div>
+            <p>CSS</p>
+            <div class="skill-rating">
+                <div class="rating4"></div>
+            </div>
+            <p>C</p>
+            <div class="skill-rating">
+                <div class="rating5"></div>
+            </div>
+            </div>
+        </div>
+
+        <!-- skill session ends -->
+
+        <!-- project session starts -->
+
+        <div class="project" id="prjct">
+            <h1>Projects</h1>
+            <div class="project1">
+                <img src="OTT.png" alt="">
+                <h2>OTT CLONE</h2>
+                <button><a href="">VIEW PROJECT</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="">View Source-code</a></button>
+            </div>
+            <div class="project2">
+                <img src="amaazon_clone.png" alt="">
+                <h2>AMAZON CLONE</h2>
+                <button><a href="">VIEW PROJECT</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="">View Source-code</a></button>
+            </div>
+            <div class="project3">
+                <img src="clg.png" alt="">
+                <h2>COLLEGE</h2>
+                <button><a href="">VIEW PROJECT</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><a href="">View Source-code</a></button>
+            </div>
+        </div>
+        <!-- project session ends -->
+
+          <!-- contact start -->
+    <div class="contact" id="contact">
+        <h1>CONTACT</h1>
+        <a href="mailto: sky123@gmail.com" title="630premaja@gmail.com"><img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202010/Google_Gmail_New_Logo_India_To_1200x768.jpeg" alt="" height="50px" width="50px"></a>
+        <a href="tel:9880xxxxxx" title="9880xxxxxx"><img src="https://w7.pngwing.com/pngs/1012/323/png-transparent-computer-icons-mobile-phones-telephone-call-round-miscellaneous-text-monochrome.png" alt=""height="50px" width="50px"></a>
+        <a href="https://twitter.com/i/flow/login?lang=en" title="Twitter"><img src="https://logowik.com/content/uploads/images/908_twitter.jpg" alt=""height="50px" width="50px"></a>
+        <a href="https://www.linkedin.com/feed/" title="Linkedin"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/LinkedIn_icon.svg/2048px-LinkedIn_icon.svg.png" alt=""height="50px" width="50px"></a>
+        <a href="https://www.instagram.com/" title="Instagram"><img src="https://img.freepik.com/free-vector/instagram-icon_1057-2227.jpg" alt=""height="50px" width="50px"></a>
+        <a href="https://www.facebook.com/" title="Facebook"><img src="https://www.edigitalagency.com.au/wp-content/uploads/Facebook-logo-blue-circle-large-transparent-png.png" alt=""height="50px" width="50px"></a>
+        <a href="https://goo.gl/maps/Hqp47SUCvCHMrnVR9" title="Address"><img src="https://png.pngtree.com/element_our/sm/20180526/sm_5b09436fd0515.png" alt=""height="50px" width="50px"></a>
+
+
+        <div class="cv">
+            <h1>RESUME</h1>
+        </div>
+        
+        <div class="res">
+            <button><a href="Yasmine1@Resume.pdf" target="_blank">VIEW RESUME</a></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button><a href="https://drive.google.com/file/d/1ScfNkpcJx26x54tPGso9XxvIIQ8p9cLa/view?pli=1"
+                target="_blank">DOWNLOAD RESUME</a></button>
+        </div>
+    </div>
+
+    <!-- contact end -->
+    </div>
+</body>
+</html>
